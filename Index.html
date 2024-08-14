@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ηρακλής Μοχωριδης - Ειδικός στο αυτοκίνητο: Τοποθέτηση παρμπρίζ, αντιηλιακών μεμβρανών και καθαρισμός φαναριών.">
+    <meta name="keywords" content="παρμπρίζ, αντιηλιακές μεμβράνες, καθαρισμός φαναριών, αυτοκίνητο">
+    <title>Ηρακλής Μοχωριδης - Ειδικός στο Αυτοκίνητο</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00FF00;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #002366;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #00FF00;
+            font-size: 36px;
+        }
+        section {
+            padding: 20px;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .portfolio img {
+            max-width: 300px;
+            margin: 10px;
+            border: 2px solid #00FF00;
+        }
+        .portfolio div {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #00FF00;
+            border-bottom: 2px solid #00FF00;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        form {
+            background-color: #002366;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px 0;
+            color: #00FF00;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #00FF00;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #00FF00;
+        }
+        form button {
+            background-color: #00FF00;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #00CC00;
+        }
+        footer {
+            background-color: #002366;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ηρακλής Μοχωριδης</h1>
+        <p>Ειδικός στο αυτοκίνητο: Τοποθέτηση παρμπρίζ, αντιηλιακών μεμβρανών και καθαρισμός φαναριών.</p>
+    </header>
+
+    <section>
+        <h2>Χαρτοφυλάκιο Εργασιών</h2>
+        <div class="portfolio">
+            <div>
+                <img src="work1.jpg" alt="Εργασία 1">
+                <p>Τοποθέτηση Παρμπρίζ</p>
+            </div>
+            <div>
+                <img src="work2.jpg" alt="Εργασία 2">
+                <p>Αντιηλιακές Μεμβράνες</p>
+            </div>
+            <div>
+                <img src="work3.jpg" alt="Εργασία 3">
+                <p>Καθαρισμός Φαναριών</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Στοιχεία Επικοινωνίας</h2>
+        <form action="/submit_form" method="post" enctype="multipart/form-data">
+            <label for="name">Όνομα</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Μήνυμα</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="file">Ανέβασε Φωτογραφίες (άδεια κυκλοφορίας, δίπλωμα, κ.λπ.)</label>
+            <input type="file" id="file" name="file" multiple>
+
+            <button type="submit">Αποστολή</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ηρακλής Μοχωριδης. Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+</body>
+</html>
